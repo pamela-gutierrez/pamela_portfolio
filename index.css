@@ -1,0 +1,171 @@
+body{
+  background-color: white;
+}
+
+/* The sidebar menu */
+.sidenav {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 450px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+  }
+
+.hero-image{
+  /* background-color: black; */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.20), rgba(0, 0, 0, 0.20)), url("angello-pro-Es9dZdtXT5Y-unsplash.jpg");
+    background-size: cover;
+}
+ 
+  
+  /* The navigation menu links */
+  .sidenav a {
+    text-align: center;
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 30px;
+    color: white;
+    display: block;
+    font-family: 'Titillium Web', sans-serif;;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: black;
+  }
+  
+  /* Style page content */
+  .main {
+    margin-left: 450px; /* Same as the width of the sidebar */
+    padding: 0px 10px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+h1{
+    text-align: left;
+    font-family: 'Titillium Web', sans-serif; 
+    margin-top: 60px;
+    padding-left: 5%;
+}
+
+p {
+    font-family: 'Titillium Web', sans-serif; 
+}
+
+.avatar {
+    justify-content: center;
+    vertical-align: middle;
+    margin-top: 50px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    /* border: solid black 1px; */
+    margin-left: 125px;
+  }
+  /* font-family: 'Brygada 1918', serif;
+font-family: 'Titillium Web', sans-serif; */
+
+.title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+
+.description {
+  padding-top: 20px;
+  text-align: center;
+  font-family: 'Titillium Web', sans-serif; 
+  font-size: 30px;
+  color: white;
+}
+
+.aboutme{
+  text-align: center;
+  font-family: 'Titillium Web', sans-serif; 
+  font-size: 20px;
+  color: white;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+button {
+  border: solid;
+  color: white;
+  padding: 20px;
+  text-align: center;
+
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+}
+
+
+.btn {
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+.button-hover-reveal-wrapper {
+ position: absolute;
+  overflow: hidden;
+  border: .5px solid white;
+  border-radius: 5000px;
+  text-align: center;
+  width: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.button-hover-reveal-wrapper:hover {
+  border: black;
+  transition: background-color 0.5s ease;
+}
+
+.button-hover-reveal-wrapper:hover .button-hover-reveal {
+  display: block;
+  font-size: 16px;
+  padding: 22px;
+}
+
+.button-hover-reveal-wrapper:hover .button-hover-reveal:hover {
+  transition: background-color 0.5s ease;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.button-hover-reveal-wrapper:hover label {
+  display: none;
+}
+
+.button-hover-reveal-wrapper .button-hover-reveal {
+  display: none;
+  color: black;
+  width: 20%;
+  z-index: 1;
+}
+
+.button-hover-reveal-wrapper label {
+  justify-content: right;
+  padding: 16px;
+  color: green;
+  font-size: 16px;
+  font-weight: normal;
+}
