@@ -17,25 +17,22 @@
     <link rel="stylesheet" href="index.css">
     <title>Document</title>
 </head>
-<div class="grid-x">
 
-    <div class="sidenav hero-image">
-        <img src="portfolio-pic.jpg" alt="Avatar" class="avatar">
-        <p class="description">Web developer.</p>
-        <p class="aboutme">California-based. <br>Lover of travel and
-            volcanoes. </p>
 
-        </a>
-        <div>
+<div class="sidenav hero-image">
+    <div class="grid-x">
+        <div class="cell hero-content">
+            <img src="portfolio-pic.jpg" alt="Avatar" class=" cell avatar">
+            <p class="cell description">Web developer.</p>
+            <p class="aboutme cell">California-based. <br>Lover of travel and
+                volcanoes. </p>
+            <!-- <div class="cell icons"> -->
             <a href="https://github.com/pamela-gutierrez" target="_blank"><i class="fab fa-github fa-1x"></i></a><a
                 href="mailto:pgutierrez44@gmail.com" target="_blank"><i class="far fa-envelope fa-1x"></i></a><a
                 href="https://www.linkedin.com/in/pamela-gutierrez" target="_blank"><i
                     class="fab fa-linkedin fa-1x"></i></a>
+            <!-- </div> -->
         </div>
-        <!-- <a href="#">About</a>
-    <a href="#">Services</a>
-    <a href="#">Clients</a>
-    <a href="#">Contact</a> -->
     </div>
 </div>
 
@@ -44,7 +41,7 @@
     <div class="main">
         <h1>Pamela Gutierrez </h1>
 
-        <p style="padding: 30px; font-size: 20px; text-align: left;">I enjoy finding the balance between clean and
+        <p class="moreAboutMe">I enjoy finding the balance between clean and
             efficient code and
             aesthetic
             design in
@@ -52,23 +49,92 @@
             from the no-code planning phase to the zen-mode programming sprints.
         </p>
 
-        <div class="button-hover-reveal-wrapper hide-for-small-only">
-            <label>Learn More</label>
-            <a href="assets/Pamela_Gutierrez_-_Web_Developer (2).pdf" target="_blank"
-                class="button-hover-reveal">Resume</a>
-            <a data-open="about_modal" class="button-hover-reveal">
-                About Me</a>
-            <a data-open="projects_modal" class="button-hover-reveal">Projects</a>
+        <div class="button-hover-reveal-wrapper">
+            <label>Sign Up Now</label>
+            <a href="#" class="button-hover-reveal">Plan 1</a>
+            <a href="#" class="button-hover-reveal">Plan 2</a>
         </div>
-    </div>
-    </div>
+        <!-- <div class="cell">
+            <ul class="tabs" data-tabs id="example-tabs">
+                <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Tab 1</a></li>
+                <li class="tabs-title"><a data-tabs-target="panel2" href="#panel2">Tab 2</a></li>
+            </ul>
+        </div> -->
 
-    <script>
-        $(document).ready(function () {
-            $(document).foundation();
-        })
-    </script>
-    <script src="https://kit.fontawesome.com/a7978ebb6a.js" crossorigin="anonymous"></script>
+        <div class="late">
+
+            <p class="latestProjects">Latest Projects</p>
+
+        </div>
+
+        <div class="grid-container">
+            <div class="grid-x grid-margin-x small-up-2 medium-up-3">
+                <div class="cell">
+                    <div class="card">
+                        <img src="workday-pic.png">
+                        <div class="card-section">
+                            <h4>This is a row of cards.</h4>
+                            <p>This row of cards is embedded in an X-Y Block Grid.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cell">
+                    <div class="card">
+                        <img src="Screen Shot 2021-01-14 at 23.55.29.png">
+                        <div class="card-section">
+                            <h4>This is a card.</h4>
+                            <p>It has an easy to override visual style, and is appropriately subdued.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cell">
+                    <div class="card">
+                        <img src="Screen Shot 2021-02-15 at 16.39.08.png">
+                        <div class="card-section">
+                            <h4>This is a card.</h4>
+                            <p>It has an easy to override visual style, and is appropriately subdued.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="grid-x grid-margin-x small-up-2 medium-up-3">
+            <div class="cell">
+                <div class="card">
+                    <img src="portfolio-pic.jpg">
+                    <div class="card-section">
+                        <h4>This is a row of cards.</h4>
+                        <p>This row of cards is embedded in an Flex Block Grid.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="cell">
+                <div class="card">
+                    <img src="portfolio-pic.jpg">
+                    <div class="card-section">
+                        <h4>This is a card.</h4>
+                        <p>It has an easy to override visual style, and is appropriately subdued.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="cell">
+                <div class="card">
+                    <img src="portfolio-pic.jpg">
+                    <div class="card-section">
+                        <h4>This is a card.</h4>
+                        <p>It has an easy to override visual style, and is appropriately subdued.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+        <script>
+            $(document).ready(function () {
+                $(document).foundation();
+            })
+        </script>
+        <script src="https://kit.fontawesome.com/a7978ebb6a.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
