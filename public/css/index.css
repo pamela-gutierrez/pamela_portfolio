@@ -4,15 +4,13 @@ body{
 
 /* The sidebar menu */
 .sidenav {
-    height: 100%; /* Full-height: remove this if you want "auto" height */
-    width: 450px; /* Set the width of the sidebar */
-    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-    z-index: 1; /* Stay on top */
-    top: 0; /* Stay at the top */
-    left: 0;
-    background-color: #111; /* Black */
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 20px;
+  margin: 0;
+  padding: 0;
+  width: 450px;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
   }
 
 .hero-image{
@@ -26,7 +24,6 @@ body{
   
   /* The navigation menu links */
   .sidenav a {
-    /* text-align: center; */
     padding: 6px 8px 6px 16px;
     text-decoration: none;
     font-size: 30px;
@@ -35,8 +32,6 @@ body{
     font-family: 'Titillium Web', sans-serif;;
   }
 
-   */
-  /* When you mouse over the navigation links, change their color */
   .sidenav a:hover {
     color: black;
   }
@@ -44,24 +39,28 @@ body{
   /* Style page content */
   .main {
     margin-left: 450px; /* Same as the width of the sidebar */
-    /* padding: 0px 10px; */
     padding-left: 30px;
   }
-  
-  /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
-  @media screen and (max-height: 450px) {
+
+  @media screen and (max-width: 700px) {
     .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
+    .sidenav a {
+      font-size: 18px;
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
   }
+
+  
+  
 
 h1{
   margin-top: 40px;
-    text-align: left;
+    text-align: center;
     font-family: 'Titillium Web', sans-serif; 
     margin-bottom: 3%;
     padding: 30px;
-    /* padding: 0px 10px; */
-    /* padding-left: 5%; */
 }
 
 p {
@@ -69,17 +68,12 @@ p {
 }
 
 .avatar {
-    /* justify-content: center; */
-    /* vertical-align: right; */
     margin-top: 50px;
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    /* border: solid black 1px; */
-    /* margin-left: 125px; */
+
   }
-  /* font-family: 'Brygada 1918', serif;
-font-family: 'Titillium Web', sans-serif; */
 
 .title {
     text-align: center;
@@ -90,7 +84,6 @@ font-family: 'Titillium Web', sans-serif; */
 
 .description {
   padding-top: 20px;
-  /* text-align: center; */
   font-family: 'Titillium Web', sans-serif; 
   font-size: 30px;
   color: white;
@@ -109,14 +102,9 @@ font-family: 'Titillium Web', sans-serif; */
 
 
 .latestProjects{
-  margin-top: 50%;
   text-align: center; 
   font-size: 40px;
   padding: 5px;
-  /* background-color:#467379; */
-  /* background-color: blue; */
-  /* margin: 10px; */
-
 }
 
 .moreAboutMe{
@@ -128,61 +116,6 @@ font-family: 'Titillium Web', sans-serif; */
   color: black;
   padding: 30px;
 }
-
-
-.button-hover-reveal-wrapper {
-  font-family: 'Titillium Web', sans-serif; 
-
-  overflow: hidden;
-  border: 1px solid black;
-  border-radius: 1000px;
-  text-align: center;
-  width: 50%;
-  background: #fefefe;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.button-hover-reveal-wrapper:hover {
-  border: black;
-  background-color: white;
-  transition: background-color 0.5s ease;
-}
-
-.button-hover-reveal-wrapper:hover .button-hover-reveal {
-  display: block;
-  font-size: 16px;
-  padding: 22px;
-}
-
-.button-hover-reveal-wrapper:hover .button-hover-reveal:hover {
-  transition: background-color 0.5s ease;
-  background-color: rgba(0, 0, 0, 0.1);
-}
-
-.button-hover-reveal-wrapper:hover label {
-  display: none;
-}
-
-.button-hover-reveal-wrapper .button-hover-reveal {
-  display: none;
-  color: #fefefe;
-  width: 50%;
-  z-index: 1;
-}
-
-.button-hover-reveal-wrapper label {
-  padding: 16px;
-  color: #1779ba;
-  font-size: 16px;
-  font-weight: bold;
-}
-
-
 
 /* Rounded Social Buttons */
 
@@ -218,36 +151,7 @@ font-family: 'Titillium Web', sans-serif; */
           transform: rotate(360deg);
 }
 
-.rounded-social-buttons .social-button.facebook {
-  background: #3b5998;
-  opacity: 0.5;
-}
 
-.rounded-social-buttons .social-button.facebook:before {
-  font-family: "FontAwesome";
-  content: "";
-}
-
-.rounded-social-buttons .social-button.facebook:hover, .rounded-social-buttons .social-button.facebook:focus {
-  color: #3b5998;
-  background: #fefefe;
-  border-color: #3b5998;
-}
-
-.rounded-social-buttons .social-button.twitter {
-  background: #55acee;
-}
-
-.rounded-social-buttons .social-button.twitter:before {
-  font-family: "FontAwesome";
-  content: "";
-}
-
-.rounded-social-buttons .social-button.twitter:hover, .rounded-social-buttons .social-button.twitter:focus {
-  color: #55acee;
-  background: #fefefe;
-  border-color: #55acee;
-}
 
 .rounded-social-buttons .social-button.linkedin {
   background: #007bb5;
@@ -265,65 +169,6 @@ font-family: 'Titillium Web', sans-serif; */
   border-color: #007bb5;
 }
 
-.rounded-social-buttons .social-button.youtube {
-  background: #bb0000;
-}
-
-.rounded-social-buttons .social-button.youtube:before {
-  font-family: "FontAwesome";
-  content: "";
-}
-
-.rounded-social-buttons .social-button.youtube:hover, .rounded-social-buttons .social-button.youtube:focus {
-  color: #bb0000;
-  background: #fefefe;
-  border-color: #bb0000;
-}
-
-.rounded-social-buttons .social-button.instagram {
-  background: #125688;
-}
-
-.rounded-social-buttons .social-button.instagram:before {
-  font-family: "FontAwesome";
-  content: "";
-}
-
-.rounded-social-buttons .social-button.instagram:hover, .rounded-social-buttons .social-button.instagram:focus {
-  color: #125688;
-  background: #fefefe;
-  border-color: #125688;
-}
-
-.rounded-social-buttons .social-button.pinterest {
-  background: #cb2027;
-}
-
-.rounded-social-buttons .social-button.pinterest:before {
-  font-family: "FontAwesome";
-  content: "";
-}
-
-.rounded-social-buttons .social-button.pinterest:hover, .rounded-social-buttons .social-button.pinterest:focus {
-  color: #cb2027;
-  background: #fefefe;
-  border-color: #cb2027;
-}
-
-.rounded-social-buttons .social-button.google-plus {
-  background: #dd4b39;
-}
-
-.rounded-social-buttons .social-button.google-plus:before {
-  font-family: "FontAwesome";
-  content: "";
-}
-
-.rounded-social-buttons .social-button.google-plus:hover, .rounded-social-buttons .social-button.google-plus:focus {
-  color: #dd4b39;
-  background: #fefefe;
-  border-color: #dd4b39;
-}
 
 .rounded-social-buttons .social-button.github {
   background: #000000;
@@ -341,21 +186,6 @@ font-family: 'Titillium Web', sans-serif; */
   border-color: #000000;
 }
 
-.rounded-social-buttons .social-button.tumblr {
-  background: #32506d;
-}
-
-.rounded-social-buttons .social-button.tumblr:before {
-  font-family: "FontAwesome";
-  content: "";
-}
-
-.rounded-social-buttons .social-button.tumblr:hover, .rounded-social-buttons .social-button.tumblr:focus {
-  color: #32506d;
-  background: #fefefe;
-  border-color: #32506d;
-}
-
 button {
   background: none;
   border-radius: 50%;
@@ -365,3 +195,86 @@ button {
 }
 
 
+.secondary {
+  border-radius: 1000px;
+  justify-content: center;
+  font-family: 'Titillium Web', sans-serif; 
+}
+
+div[class*=box] {
+	height: 33.33%;
+	width: 100%; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-1 { 
+  background-color:transparent; 
+
+}
+
+.btn {
+	line-height: 50px;
+	height: 50px;
+	text-align: center;
+	width: 250px;
+	cursor: pointer;
+}
+
+/* 
+========================
+      BUTTON ONE
+========================
+*/
+.btn-one {
+	color:#275B63;
+	transition: all 0.3s;
+  position: relative;
+  font-family: 'Titillium Web', sans-serif; 
+  font-size: 30px;
+}
+.btn-one span {
+  transition: all 0.3s;
+  
+}
+.btn-one::before {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	opacity: 0;
+	transition: all 0.3s;
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: black;
+	border-bottom-color: black;
+	transform: scale(0.1, 1);
+}
+.btn-one:hover span {
+	letter-spacing: 2px;
+}
+.btn-one:hover::before {
+	opacity: 1;	
+	transform: scale(1, 1);	
+}
+.btn-one::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	transition: all 0.3s;
+	background-color: rgba(255,255,255,0.1);
+}
+.btn-one:hover::after {
+	opacity: 0;	
+	transform: scale(0.1, 1);
+}
